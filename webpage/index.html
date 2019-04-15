@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/index_style.css">
+    <script src="js/index.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<div>
+    <div class="navbar_top">
+        <div id="navbar_top_title">My First Webpage Layout</div>
+        <div id="navbar_top_contact">
+            Contact:
+            <br>
+            Email:
+        </div>
+    </div>
+    <div class="menu_container">
+        <div id="menu_left">
+            <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+            </ul>
+        </div>
+        <div id="menu_login">
+            <form>
+                <input type="text" id="uname" name="uname" placeholder="Username">
+                <input type="password" id="password" name="password" placeholder="Password">
+                <input type="submit" value="Sign in">
+            </form>
+        </div>
+    </div>
+    
+    <div class="body_container">
+        <div class="vertical-menu">
+            <a href="#" onclick="changeContent(1)" class="active">Registration</a>
+            <a href="#" onclick="changeContent(2)" >Tabular Data</a>
+            <a href="#" onclick="changeContent(3)" >Color Maker</a>
+            <a href="#" onclick="changeContent(4)" >Article</a>
+            <a href="#" onclick="changeContent(5)" >Contact Form</a>
+        </div>
+        <div id="body_data"></div>
+        <div id="body_right_other"></div>
+    </div>
+    
+    <div class="body_footer">
+    <h3>Vinayak & Co.</h3>    
+    </div>
+</div>
+
+</body>
+</html>

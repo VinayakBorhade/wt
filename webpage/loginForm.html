@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="loginForm.css" rel="stylesheet" type="text/css" media="all">
+
+<script>
+function validateForm(){
+	var x = document.forms["myForm"]["uname"].value;
+	var y = document.forms["myForm"]["psw"].value;
+	console.log("x: "+x);
+	if(x!="" && y!=""){
+		alert("you are: "+x);
+	}
+	return true;
+}
+</script>
+</head>
+<body>
+<center>
+<div class="mainContainer">
+<h2>Login Form</h2>
+
+<form action="/action_page.php">
+  
+
+  <div class="container">
+    <input type="text" placeholder="Enter Username" name="uname" required>
+	<br>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+    <br>
+	<div class="blockleft">
+	<div id="rememberMe"><label><input type="checkbox" checked="checked" name="remember">Remember me</label></div>
+	<div id="forgotPassword"><span class="psw">Forgot <a href="#">password?</a></span></div>
+	</div>
+	<br>
+    <button type="submit">Login</button>
+    <label>
+      
+    </label>
+  </div>
+
+</form>
+</div>
+</center>
+
+</body>
+</html>
